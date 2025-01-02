@@ -1,0 +1,17 @@
+.color-piker-container{
+width: auto;
+height: 50vh;
+margin: 10vh;
+background: #1f3540;
+border-radius: 15px;
+box-shadow: 5px 2px 6px 10px hsla(200, 31%, 33%, 0.749);
+text-align: center;
+padding: 40px 20px 0px ;
+}
+.color-display{
+    height: 50%;
+    width: 90%;
+    border-radius: 15px;
+    margin-left: 20px;
+    transition: 0.25s ease;
+}

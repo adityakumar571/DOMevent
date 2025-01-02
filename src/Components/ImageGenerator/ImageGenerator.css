@@ -1,0 +1,159 @@
+.ai-image-generator{
+display: flex;
+flex-direction: column;
+margin: auto;
+align-items: center;
+margin-top: 80px;
+margin-bottom: 20px;
+gap: 30px;
+}
+
+.header{
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.header span{
+    color: #DE1B89;
+    font-weight: 600;
+}
+.img-loading{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-loading img{
+width: 512px;
+}
+
+.search-box{
+    display: flex;
+    width: 1000px;
+    height: 95px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #1f3540;
+}
+
+.search-input{
+    width: 600px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 35px;
+    margin-right: 35px;
+}
+.search-input::placeholder{
+    color: #999;
+}
+
+.generate-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 85px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #DE1B89;
+    cursor: pointer;
+}
+
+/* Default Styles for Larger Screens */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .ai-image-generator {
+      width: 90%; /* Ensure the container doesn't stretch too wide */
+      margin-top: 50px;
+      margin-bottom: 15px;
+    }
+  
+    .header {
+      font-size: 60px; /* Slightly reduce header size */
+    }
+  
+    .search-box {
+      width: 800px; /* Adjust the width for smaller screens */
+      height: 80px; /* Adjust the height */
+    }
+  
+    .search-input {
+      width: 500px; /* Adjust the width of the input */
+    }
+  
+    .generate-btn {
+      width: 250px;
+      height: 60px; /* Adjust button width */
+    }
+  }
+  
+  /* For screens smaller than 900px */
+  @media (max-width: 900px) {
+    .ai-image-generator {
+      width: 100%; /* Full width on smaller devices */
+      margin-top: 40px;
+      margin-bottom: 10px;
+      gap: 20px;
+    }
+  
+    .header {
+      font-size: 50px; /* Further reduce the font size */
+      padding-bottom: 20px;
+    }
+  
+    .search-box {
+      width: 90%; /* Full width search box */
+      height: 70px;
+      padding: 0 10px; /* Add padding to ensure input has space */
+    }
+  
+    .search-input {
+      width: 60%; /* Narrower input */
+      font-size: 16px; /* Adjust font size for readability */
+    }
+  
+    .generate-btn {
+      width: 200px; /* Smaller button on mobile */
+      font-size: 18px;
+    }
+  }
+  
+  /* For screens smaller than 600px (Mobile Portrait) */
+  @media (max-width: 600px) {
+    .ai-image-generator {
+      width: 100%;
+      margin-top: 30px;
+      gap: 15px; /* Reduced gap for smaller screens */
+    }
+  
+    .header {
+      font-size: 40px; /* Reduce header font size further */
+      text-align: center; /* Center align the header */
+    }
+  
+    .search-box {
+      width: 100%; /* Make the search box full width */
+      height: 60px;
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: center;
+    }
+  
+    .search-input {
+      width: 80%; /* Narrow input field for mobile */
+      height: 45px; /* Reduce input height */
+      font-size: 14px; /* Reduce font size */
+    }
+  
+    .generate-btn {
+      width: 80%; /* Make button full width */
+      height: 50px;
+      font-size: 18px;
+    }
+  }
+  

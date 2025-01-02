@@ -1,0 +1,23 @@
+.buttons{
+    border: 8px white;
+    display:flex;
+    align-items: center;
+}
+p{
+    font-size: 30px;
+}
+#Counter{
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 50vh;
+    width: auto;
+    border-radius: 15px;
+    box-shadow: #f5f7f8;
+    box-shadow: 10px 1px 10px 5px hsla(200, 31%, 33%, 0.749) ;
+    margin: 10vh;
+    background-color: #1f3540;
+    justify-content: space-around;
+}
+#Counter p{
+    font-size: 4rem;
+}
