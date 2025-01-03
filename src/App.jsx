@@ -1,22 +1,23 @@
-import { useState } from 'react'
 import './App.css'
-import ImageGenerator from './Components/ImageGenerator/ImageGenerator'
-import Couter from './Components/Counter/Couter'
-import ColorPiker from './Components/ColorPinker.js/ColorPiker'
-import Todo from './Components/To-Do/Todo'
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Navbar from './Components/Navbar/Navbar';
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
-const heading={1:"React Practice with  different Components"}
-
   return (
-    <>
-    <h2 className='Heading'>{heading[1]}</h2>
-      <div>
-        <ImageGenerator/>
-        <Couter/>
-        <ColorPiker/>
-        <Todo/>
-      </div>
+    <> 
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router> 
     </>
   )
 }

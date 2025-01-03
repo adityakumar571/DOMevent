@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    width: 100%;
+   align-items: center;
+    padding: 30px;
+    justify-content: space-between;;
+    background: hsla(206, 19%, 32%, 0.749);
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar ul li a{
+    color: white;
+    gap: 30px;
+    text-decoration: none;
+}
+
+.navbar ul li {
+    margin-right: 60px;
+}
+.logo{
+    font-size: 2rem;
+    font-style:oblique;
+}
