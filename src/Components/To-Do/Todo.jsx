@@ -63,8 +63,8 @@ const Todo = () => {
           <li key={index}>
             <span className="text">{index + 1}. {task}</span>
             <Button name="Delete" onClick={() => deleteTask(index)} />
-            <Button name="Move Up" onClick={() => moveTaskUp(index)} />
-            <Button name="Move Down" onClick={() => moveTaskDown(index)} />
+            <Button name="☝️" onClick={() => moveTaskUp(index)} />
+            <Button name="👇" onClick={() => moveTaskDown(index)} />
           </li>
         ))}
       </ol>

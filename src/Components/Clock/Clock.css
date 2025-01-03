@@ -1,0 +1,8 @@
+.clock-container{
+    background: #222;
+}
+.clock-container span{
+    padding: 1rem;
+    font-size: 25px;
+    font-family: monospace;
+}

@@ -3,6 +3,7 @@ import ImageGenerator from '../Components/ImageGenerator/ImageGenerator'
 import Couter from '../Components/Counter/Couter'
 import ColorPiker from '../Components/ColorPinker.js/ColorPiker'
 import Todo from '../Components/To-Do/Todo'
+import Stopwatch from '../Components/Stopwatch/Stopwatch'
 function Home() {
     const heading={1:"React Practice with  different Components"}
   return (
@@ -13,6 +14,7 @@ function Home() {
         <Couter/>
         <ColorPiker/>
         <Todo/>
+        <Stopwatch/>
       </div>
     </div>
   )
